@@ -10,5 +10,11 @@ def home():
 def health():
     return 'App is running'
 
+@app.route('/cart')
+def  cart():
+    return 'Cart is empty.'
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
